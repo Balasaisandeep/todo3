@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+    body{
+        font-family: 'Roboto', sans-serif;
+        margin-left: 4px;
+        width: 320px;
+        height: 667px;
+
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .element{
+        border: 1px solid #f08a4a;
+        width: 300px;
+        height: 70px;
+        text-align: start;
+        margin-top: 30px;
+        border-radius: 8px;
+        box-shadow: 10px 10px 10px #4e4c4c29
+    }
+
+    .title{
+    text-align:left;margin-left:10px;color: #e74c3c; font-size: 1.5em; font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;position: relative
+    }
+    .heading-bold{
+        display: inline-block;
+        margin-top: 40px;
+        font-size: 40px;
+    }
+    .heading-thin{
+        display: inline-block;
+        margin-left: 5px;
+        margin-top: 40px;
+        font-size: 40px;
+        font-weight: 200;
+        color: rgb(113, 109, 109);
+    }
+    .button{
+        display: inline-block;
+        margin-left: 65px;
+        width: 35px;
+        height: 35px;
+        background-color: tomato;
+        text-align: center;
+        font-size: 30px;
+        border-radius: 50%;
+        color: white;
+    }
+    .popup-additem {top:40%;opacity:1;visibility: visible;transition:0.5s; display:flex;flex-direction:column;justify-content:center;align-items: center;position:fixed;left:42%;width:290px;height:200px;box-shadow: 10px 10px 10px #00000029;border:1px solid #e74c3c;border-radius:10px;
+      transform: translate(-50%, -50%);z-index: 1;background-color: white;}
+    .popup-heading  { color: #e74c3c; font-size: 1em}
+    .popup-input { width: 220px; height: 30px;box-shadow: 3px 3px 3px #00000029;border-radius: 5px;opacity: 1; border: 1px solid #e74c3c}
+    .popup-add { border-radius: 20px;background-color: #e74c3c; color: white;border: none; width:70px;height:30px;margin-top:10px}
+    @media only screen and (max-width: 600px){
+      .xyz {
+        margin:20px 0px;
+        position: relative; filter: blur(9px);-webkit-filter: blur(3px);
+        }}
+     .xyz {
+       position: relative;margin:20px 0px; filter: blur(9px);-webkit-filter: blur(3px);
+     }
+    </style>
+</head>
+
+<body>
+  <div class="xyz">
+    <h2 class="heading-bold">Tasks</h2>
+    <span class="heading-thin">Lists</span>
+    <span class="button">+</span>
+    <div class="container">
+        <div class="element">
+            <p class="title">Trip to Paris</p>
+        </div>
+        <div class="element">
+            <p class="title">My Todo List 2</p>
+        </div>
+        <div class="element">
+            <p class="title">My Todo List 3</p>
+        </div>
+        <div class="element">
+            <p class="title">My Todo List 4</p>
+        </div>
+        <div class="element">
+            <p class="title">My Todo List 5</p>
+        </div>
+    </div>
+  </div>
+
+
+  <div class="popup-additem">
+    <div>
+        <p class="popup-heading">Add New List</p>
+    </div>
+    <div>
+        <input type="text" class="popup-input"/>
+    </div>
+    <div>
+      <button class="popup-add">Add</button>
+    </div>
+  </div>
+</body>
+
+</html>
